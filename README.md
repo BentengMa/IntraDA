@@ -1,26 +1,16 @@
-# Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision
-
 <p align="center">
         <img src="./figure/introduction.png">
 </p>
 
 ## Paper
-[Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision](https://arxiv.org/abs/1811.12833)
+Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision
 
 Fei Pan, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon
+
 KAIST, Korea
 
 IEEE Conference on Computer Vision and Pattern Recoginition (CVPR), 2020 (**Oral**)
 
-If you find this paper or code useful for your research, please cite our paper:
-```
-@inproceedings{fei2020intrada,
-  title={Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision},
-  author={Fei, Pan and Inkyu, Shin and Francois, Rameau and Seokju, Lee and In So Kweon},
-  booktitle={CVPR},
-  year={2020}
-}
-```
 
 
 
