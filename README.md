@@ -142,4 +142,4 @@ $ python test.py --cfg ./intrada.yml
 ```
 
 ## License
-ADVENT is released under [MIT License](./LICENSE).
+IntraDA is released under [MIT License](./LICENSE).
