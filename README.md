@@ -83,8 +83,12 @@ We follow set-ups from [ADVENT](https://github.com/valeoai/ADVENT.git). The data
 ...
 ```
 
+<p align="center">
+        <img src="./figure/table.png">
+</p>
+
 ### Pre-trained models
-Pre-trained models can be downloaded [here](https://github.com/valeoai/ADVENT/releases) and put in ```<root_dir>/ADVENT/pretrained_models```
+Pretrained models can be downloaded [here](https://drive.google.com/open?id=1KSkPdt4V76ClzmzXkT7REnBr9IonEr3Q) and put in ```<root_dir>/ADVENT/pretrained_models```
 
 
 ## Running the code
@@ -103,28 +107,27 @@ By default, logs and snapshots are stored in ```<root_dir>/experiments``` with t
 <root_dir>/ADVENT/experiments/snapshots
 ```
 
-Step 1. Conduct inter-domain adaptation: train [ADVENT](https://github.com/valeoai/ADVENT.git)
+**Step 1.** Conduct inter-domain adaptation by training [ADVENT](https://github.com/valeoai/ADVENT.git): 
 ```bash
 $ cd <root_dir>/ADVENT/advent/scripts
 $ python train.py --cfg ./config/advent.yml 
 $ python train.py --cfg ./config/advent.yml --tensorboard % using tensorboard
 ```
-After training, it is needed to get best IoU iteration by runing:
+After inter-domain training, it is needed to get best IoU iteration by runing:
 ```bash
 $ cd <root_dir>/ADVENT/advent/scripts
 $ python test.py --cfg ./config/advent.yml
 ```
-The best IoU iteration ID will be a parameter to step 2. 
+The best IoU iteration ```BEST_ID``` will be a parameter to **step 2**. 
 
-Step 2. Entropy-based ranking to split Cityscapes training set into easy split and hard split: 
+**Step 2.** Entropy-based ranking to split Cityscapes training set into easy split and hard split: 
 ```bash
 $ cd <root_dir>/entropyrk
-$ python entropy.py --best_iter 75000 # choose the iteration with Best IoU from step 1.
-$ python entropy.py --best_iter 75000 --normalize True # add a normalizor to the entropy ranking system
+$ python entropy.py --best_iter BEST_ID --normalize False --lambda1 0.67 
 ```
 You will see the pseudo labels generated in ```color_masks```, the easy split file names in ```easy_splt.txt```, and the hard split file names in ```hard_split.txt```.
 
-Step 3. Conduct intra-domain adaptation:
+**Step 3.** Conduct intra-domain adaptation by runing:
 ```bash
 $ cd <root_dir>/intrada
 $ python train.py --cfg ./intrada.yml
@@ -132,7 +135,7 @@ $ python train.py --cfg ./intrada.yml --tensorboard % using tensorboard
 ```
 
 ### Testing
-To test the performance from intrada
+To test the performance from intrada, run:
 ```bash
 $ cd <root_dir>/intrada
 $ python test.py --cfg ./intrada.yml
