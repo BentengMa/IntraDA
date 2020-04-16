@@ -125,7 +125,7 @@ The best IoU iteration ```BEST_ID``` will be a parameter to **step 2**.
 $ cd <root_dir>/entropyrk
 $ python entropy.py --best_iter BEST_ID --normalize False --lambda1 0.67 
 ```
-You will see the pseudo labels generated in ```color_masks```, the easy split file names in ```easy_splt.txt```, and the hard split file names in ```hard_split.txt```.
+You will see the pseudo labels generated in ```color_masks```, the easy split file names in ```easy_split.txt```, and the hard split file names in ```hard_split.txt```.
 
 **Step 3.** Conduct intra-domain adaptation by runing:
 ```bash
