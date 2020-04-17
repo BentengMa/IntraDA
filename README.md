@@ -22,7 +22,7 @@ Convolutional neural network-based approaches have achieved remarkable progress 
 ## Acknowledgement
 This repo is heavily borrowed from [ADVENT](https://github.com/valeoai/ADVENT.git), [AdaptSegNet](https://github.com/wasidennis/AdaptSegNet), and [Pytorch-Deeplab](https://github.com/speedinghzl/Pytorch-Deeplab).
 
-### Pre-requsites (same as [ADVENT](https://github.com/valeoai/ADVENT.git))
+### Pre-requsites 
 * Python 3.7
 * Pytorch >= 0.4.1
 * CUDA 9.0 or higher
