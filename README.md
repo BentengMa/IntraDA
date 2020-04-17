@@ -1,17 +1,27 @@
-<p align="center">
-        <img src="./figure/introduction.png">
-</p>
+# Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision
+
 
 ## Paper
-Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision
+[Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision](https://128.84.21.199/abs/2004.07703)
 
 Fei Pan, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon
-
 KAIST, Korea
 
 IEEE Conference on Computer Vision and Pattern Recoginition (CVPR), 2020 (**Oral**)
 
+If you find this paper or code useful for your research, please cite our paper:
+```
+@InProceedings{pan2020unsupervised,
+  title = {Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision},
+  author = {Pan, Fei and Shin, Inkyu and Rameau, Francois and Lee, Seokju and Kweon, In So},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recoginition (CVPR)},
+  year = {2020}
+}
+```
 
+<p align="center">
+        <img src="./figure/introduction.png">
+</p>
 
 
 ## Abstract 
@@ -22,7 +32,7 @@ Convolutional neural network-based approaches have achieved remarkable progress 
 ## Acknowledgement
 This repo is heavily borrowed from [ADVENT](https://github.com/valeoai/ADVENT.git), [AdaptSegNet](https://github.com/wasidennis/AdaptSegNet), and [Pytorch-Deeplab](https://github.com/speedinghzl/Pytorch-Deeplab).
 
-### Pre-requsites 
+### Pre-requsites
 * Python 3.7
 * Pytorch >= 0.4.1
 * CUDA 9.0 or higher
