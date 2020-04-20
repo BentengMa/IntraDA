@@ -2,7 +2,7 @@
 
 
 ## Paper
-[Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision](https://128.84.21.199/abs/2004.07703)
+[Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision](https://arxiv.org/abs/2004.07703v1)
 
 Fei Pan, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon
 KAIST, Korea
