@@ -140,6 +140,11 @@ To test the performance from intrada, run:
 $ cd <root_dir>/intrada
 $ python test.py --cfg ./intrada.yml
 ```
+### Examples of 8 low entropy images and 8 high entropy images from Cityscapes training set.
+
+<p align="center">
+        <img src="./figure/examples.png">
+</p>
 
 ## License
 IntraDA is released under [MIT License](./LICENSE).
