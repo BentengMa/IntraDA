@@ -31,6 +31,7 @@ Convolutional neural network-based approaches have achieved remarkable progress 
 
 ## Acknowledgement
 This work is supported by [BOSCH](https://www.bosch.com/)
+
 This repo is heavily borrowed from [ADVENT](https://github.com/valeoai/ADVENT.git), [AdaptSegNet](https://github.com/wasidennis/AdaptSegNet), and [Pytorch-Deeplab](https://github.com/speedinghzl/Pytorch-Deeplab).
 
 ### Pre-requsites
